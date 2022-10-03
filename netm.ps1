@@ -28,7 +28,7 @@ $tsg = [math]::Round(("$s1" /1024 /1024 /1024),2)
 
 	else
  
-{ if (($trm -gt 1024) -and ($tsm -gt 1024)) {write-progress "$rtm MB/s Down $stm MB/s Up Received/Sent: $trg GB/$tsg GB"} elseif ($trm -gt 1024) {write-progress "$rtm MB/s Down $stm MB/s Up Received/Sent: $trg GB/$tsm MB"}  elseif ($tsm -gt 1024) {write-progress "$rtm MB/s Down $stm MB/s Up Received/Sent: $trm MB/$tsg GB"} else {write-progress "$rtm MB/s Down $rts MB/s Up Received/Sent: $trm MB/$tsm MB"} }
+{ if (($trm -gt 1024) -and ($tsm -gt 1024)) {write-progress "$rtm MB/s Down $stm MB/s Up Received/Sent: $trg GB/$tsg GB"} elseif ($trm -gt 1024) {write-progress "$rtm MB/s Down $stm MB/s Up Received/Sent: $trg GB/$tsm MB"}  elseif ($tsm -gt 1024) {write-progress "$rtm MB/s Down $stm MB/s Up Received/Sent: $trm MB/$tsg GB"} else {write-progress "$rtm MB/s Down $stm MB/s Up Received/Sent: $trm MB/$tsm MB"} }
 
  
 }
